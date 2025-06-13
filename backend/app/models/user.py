@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from sqlalchemy import Column, Integer, String, DateTime, Boolean
 from sqlalchemy.orm import declarative_base
 from datetime import datetime
