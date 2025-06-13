@@ -1,31 +1,35 @@
+from flask import Flask, request, jsonify
 import xml.etree.ElementTree as ET
-import sqlite3
 import logging
 import os
 import re
 from datetime import datetime
+from test_config import get_connection
 
+app = Flask(__name__)
 
 # Set up logging
-logging.basicConfig(filename='unprocessed_messages.log', level=logging.INFO, format='%(asctime)s - %(message)s')
+logging.basicConfig(filename='test_unprocessed_messages.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
 # Ensure the db directory exists
 os.makedirs("db", exist_ok=True)
 
-# SQLite DB setup
-conn = sqlite3.connect('db/data.db')
-cursor = conn.cursor()
+DB_PATH = 'db/test_data.db'
 
-# Create table if it doesn't exist
-cursor.execute('''
-CREATE TABLE IF NOT EXISTS sms_transactions (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    type TEXT,
-    amount INTEGER,
-    date TEXT,
-    details TEXT
-)
-''')
+def init_db():
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute('''
+    CREATE TABLE IF NOT EXISTS sms_transactions (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        type TEXT,
+        amount INTEGER,
+        date TEXT,
+        details TEXT
+    )
+    ''')
+    conn.commit()
+    conn.close()
 
 def parse_xml(file_path):
     tree = ET.parse(file_path)
@@ -55,6 +59,8 @@ def extract_fields(message):
         return None, None
 
 def categorize_sms(sms_data):
+    conn = get_connection()
+    cursor = conn.cursor()
     for message in sms_data:
         amount, date = extract_fields(message)
         category = None
@@ -90,25 +96,26 @@ def categorize_sms(sms_data):
                 logging.info(f"Insert failed: {message} - Error: {e}")
         else:
             logging.info(f'Unprocessed or invalid message: {message}')
-
-if __name__ == "__main__":
-    file_path = './backend/modified_sms_v2.xml'  # Update with the actual path
-    sms_data = parse_xml(file_path)
-    categorize_sms(sms_data)
     conn.commit()
-    cursor.close()
     conn.close()
-    print("Categorized and stored SMS data in db/data.db")
 
-    # Test the SQLite database
-    conn = sqlite3.connect('db/data.db')
-    cursor = conn.cursor()
+@app.route('/parse-xml', methods=['POST'])
+def upload_and_parse():
+    if 'file' not in request.files:
+        return jsonify({'error': 'No file uploaded'}), 400
 
-    cursor.execute('SELECT * FROM sms_transactions')
-    rows = cursor.fetchall()
+    file = request.files['file']
+    filepath = os.path.join("db", file.filename)
+    file.save(filepath)
 
-    for row in rows:
-        print(row)
+    try:
+        sms_data = parse_xml(filepath)
+        categorize_sms(sms_data)
+        return jsonify({'message': 'File parsed and data stored successfully.'})
+    except Exception as e:
+        logging.error(f"Error parsing file: {e}")
+        return jsonify({'error': 'Failed to process the file'}), 500
 
-    cursor.close()
-    conn.close()
+if __name__ == '__main__':
+    init_db()
+    app.run(debug=True)  # Visit http://127.0.0.1:5000/parse-xml with a POST request

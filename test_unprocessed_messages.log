@@ -1,0 +1,16 @@
+2025-06-13 22:27:57,208 -  * Debugger is active!
+2025-06-13 22:27:57,215 -  * Debugger PIN: 314-521-014
+2025-06-13 22:28:57,800 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-13 22:28:57,800 - [33mPress CTRL+C to quit[0m
+2025-06-13 22:28:57,801 -  * Restarting with stat
+2025-06-13 22:28:58,042 -  * Debugger is active!
+2025-06-13 22:28:58,048 -  * Debugger PIN: 314-521-014
+2025-06-13 22:30:12,629 -  * Detected change in '/Users/adam/Documents/ALU BSC WORKS/MoMo_Data-_Analysis/backend/test_config.py', reloading
+2025-06-13 22:30:12,675 -  * Restarting with stat
+2025-06-13 22:30:13,047 -  * Debugger is active!
+2025-06-13 22:30:13,054 -  * Debugger PIN: 314-521-014
+2025-06-13 22:42:06,595 -  * Detected change in '/Users/adam/Documents/ALU BSC WORKS/MoMo_Data-_Analysis/backend/exp_Db_to_json.py', reloading
+2025-06-13 22:42:06,670 -  * Restarting with stat
+2025-06-13 22:42:07,013 -  * Debugger is active!
+2025-06-13 22:42:07,022 -  * Debugger PIN: 314-521-014
