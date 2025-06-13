@@ -1,7 +1,8 @@
-** MTN MoMo SMS Data Dashboard **
+**MTN MoMo SMS Data Dashboard**
 
 
-Overview
+**Overview**
+
 This project is a fullstack enterprise-level application designed to process, store, and visualize mobile transaction data from MTN MoMo SMS messages in XML format. The goal is to extract meaningful insights from ~1600 real-world SMS entries using backend processing, relational databases, and a web-based frontend dashboard.
 
 🛠️ Tech Stack
@@ -19,7 +20,7 @@ XML Parsing using xml.etree.ElementTree, lxml, or BeautifulSoup
 
 Categorization of SMS into:
 
-Incoming Money
+ Incoming Money
 
 Payments to Code Holders
 
