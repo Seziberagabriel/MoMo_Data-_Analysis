@@ -102,4 +102,4 @@ cursor.execute('''
                                                                                                                           process_transactions('backend/modified_sms_v2.xml')
                                                                                                                           cursor.close()
                                                                                                                           conn.close()
-                                                                                                                          print("Transaction processing completed.)
+                                                                                                                          print("Transaction processing completed.")
