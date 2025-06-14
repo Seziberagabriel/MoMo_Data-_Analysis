@@ -9,12 +9,14 @@ from test_config import get_connection
 app = Flask(__name__)
 
 # Set up logging
-logging.basicConfig(filename='test_unprocessed_messages.log', level=logging.INFO, format='%(asctime)s - %(message)s')
+logging.basicConfig(filename='test_unprocessed_messages.log',
+                    level=logging.INFO, format='%(asctime)s - %(message)s')
 
 # Ensure the db directory exists
 os.makedirs("db", exist_ok=True)
 
-DB_PATH = 'db/test_data.db'
+DB_PATH = "db/test2_data.db"
+
 
 def init_db():
     conn = get_connection()
@@ -31,6 +33,7 @@ def init_db():
     conn.commit()
     conn.close()
 
+
 def parse_xml(file_path):
     tree = ET.parse(file_path)
     root = tree.getroot()
@@ -45,12 +48,15 @@ def parse_xml(file_path):
 
     return sms_data
 
+
 def extract_fields(message):
     try:
         amount_match = re.search(r"(\d{1,3}(?:,\d{3})*|\d+) RWF", message)
-        amount = int(amount_match.group(1).replace(",", "")) if amount_match else None
+        amount = int(amount_match.group(1).replace(
+            ",", "")) if amount_match else None
 
-        date_match = re.search(r"(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})", message)
+        date_match = re.search(
+            r"(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})", message)
         date = date_match.group(1) if date_match else None
 
         return amount, date
@@ -58,12 +64,15 @@ def extract_fields(message):
         logging.info(f"Failed to extract fields: {message} - Error: {e}")
         return None, None
 
+
 def categorize_sms(sms_data):
     conn = get_connection()
+    print(f"Database connection established: {conn}")
     cursor = conn.cursor()
     for message in sms_data:
         amount, date = extract_fields(message)
         category = None
+        # print(f"Processing message: {message}")
 
         if "received" in message.lower():
             category = 'Incoming Money'
@@ -99,6 +108,7 @@ def categorize_sms(sms_data):
     conn.commit()
     conn.close()
 
+
 @app.route('/parse-xml', methods=['POST'])
 def upload_and_parse():
     if 'file' not in request.files:
@@ -110,12 +120,15 @@ def upload_and_parse():
 
     try:
         sms_data = parse_xml(filepath)
+        # print(sms_data)
         categorize_sms(sms_data)
         return jsonify({'message': 'File parsed and data stored successfully.'})
     except Exception as e:
         logging.error(f"Error parsing file: {e}")
         return jsonify({'error': 'Failed to process the file'}), 500
 
+
 if __name__ == '__main__':
     init_db()
-    app.run(debug=True)  # Visit http://127.0.0.1:5000/parse-xml with a POST request
+    # Visit http://127.0.0.1:5000/parse-xml with a POST request
+    app.run(debug=True)
