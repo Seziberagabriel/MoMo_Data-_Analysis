@@ -10,3 +10,15 @@ class UserModel(db.Model):
 
     def __repr__(self):
         return f"User(name = {self.user_namename}, email = {self.email})"
+    
+
+class sms_Transaction(db.Midel):
+    id = db.Column(db.Integer,primary_key=True)
+    type = db.Column(db.String(80))
+    amount = db.Column(db.Integer)
+    date = db.Column(db.String(80))
+    details = db.Column(db.String(80))
+    
+    def __repr__(self):
+        return f"Transaction(type = {self.type}, Amount = {self.amount}, Date = {self.date}, Deteils = {self.details} )"
+   
