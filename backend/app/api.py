@@ -23,7 +23,7 @@ def upload_and_parse():
         return jsonify({'error': 'No file uploaded'}), 400
 
     file = request.files['file']
-    filepath = os.path.join("db", file.filename)
+    filepath = os.path.join("imports", file.filename)
     file.save(filepath)
 
     try:
