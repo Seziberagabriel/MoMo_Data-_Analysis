@@ -14,7 +14,7 @@ logging.basicConfig(filename='test_unprocessed_messages.log', level=logging.INFO
 # Ensure the db directory exists
 os.makedirs("db", exist_ok=True)
 
-DB_PATH = 'db/test_data.db'
+DB_PATH = 'db/new_postman_test.db'
 
 def init_db():
     conn = get_connection()
