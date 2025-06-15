@@ -5,34 +5,13 @@ import os
 import re
 from datetime import datetime
 from config import get_connection
-# from api import app
 
-# app = Flask(__name__)
 
 # Set up logging
 logging.basicConfig(filename='test_unprocessed_messages.log',
                     level=logging.INFO, format='%(asctime)s - %(message)s')
 
-# # Ensure the db directory exists
-# os.makedirs("db", exist_ok=True)
 
-# DB_PATH = "db/test2_data.db"
-
-
-# def init_db():
-#     conn = get_connection()
-#     cursor = conn.cursor()
-#     cursor.execute('''
-#     CREATE TABLE IF NOT EXISTS sms_transactions (
-#         id INTEGER PRIMARY KEY AUTOINCREMENT,
-#         type TEXT,
-#         amount INTEGER,
-#         date TEXT,
-#         details TEXT
-#     )
-#     ''')
-#     conn.commit()
-#     conn.close()
 
 
 def parse(file_path):
@@ -109,27 +88,3 @@ def categorize_sms(sms_data):
     conn.commit()
     conn.close()
 
-
-# @app.route('/parse-xml', methods=['POST'])
-# def upload_and_parse():
-#     if 'file' not in request.files:
-#         return jsonify({'error': 'No file uploaded'}), 400
-
-#     file = request.files['file']
-#     filepath = os.path.join("db", file.filename)
-#     file.save(filepath)
-
-#     try:
-#         sms_data = parse_xml(filepath)
-#         # print(sms_data)
-#         categorize_sms(sms_data)
-#         return jsonify({'message': 'File parsed and data stored successfully.'})
-#     except Exception as e:
-#         logging.error(f"Error parsing file: {e}")
-#         return jsonify({'error': 'Failed to process the file'}), 500
-
-
-# if __name__ == '__main__':
-#     init_db()
-#     # Visit http://127.0.0.1:5000/parse-xml with a POST request
-#     app.run(debug=True)
