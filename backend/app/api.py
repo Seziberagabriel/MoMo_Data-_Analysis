@@ -4,6 +4,9 @@ from flask_restful import Resource, Api, reqparse, fields , marshal_with, abort
 import os
 from parser_xml import parse, categorize_sms
 import logging
+from models import sms_transactions , UserModel
+
+
 
 
 app = Flask(__name__)
