@@ -12,7 +12,7 @@ class UserModel(db.Model):
         return f"User(name = {self.user_namename}, email = {self.email})"
     
 
-class sms_Transaction(db.Midel):
+class sms_transactions(db.Model):
     id = db.Column(db.Integer,primary_key=True)
     type = db.Column(db.String(80))
     amount = db.Column(db.Integer)

@@ -5,5 +5,5 @@ import os
 
 
 def get_connection():
-    os.makedirs("db", exist_ok=True)
+    os.makedirs("instance", exist_ok=True)
     return sqlite3.connect("instance/database.db")

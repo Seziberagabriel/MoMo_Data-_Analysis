@@ -19,20 +19,20 @@ logging.basicConfig(filename='test_unprocessed_messages.log',
 # DB_PATH = "db/test2_data.db"
 
 
-def init_db():
-    conn = get_connection()
-    cursor = conn.cursor()
-    cursor.execute('''
-    CREATE TABLE IF NOT EXISTS sms_transactions (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        type TEXT,
-        amount INTEGER,
-        date TEXT,
-        details TEXT
-    )
-    ''')
-    conn.commit()
-    conn.close()
+# def init_db():
+#     conn = get_connection()
+#     cursor = conn.cursor()
+#     cursor.execute('''
+#     CREATE TABLE IF NOT EXISTS sms_transactions (
+#         id INTEGER PRIMARY KEY AUTOINCREMENT,
+#         type TEXT,
+#         amount INTEGER,
+#         date TEXT,
+#         details TEXT
+#     )
+#     ''')
+#     conn.commit()
+#     conn.close()
 
 
 def parse(file_path):
