@@ -8,23 +8,7 @@ import "./App.css";
 import revenueData from "./data/revenueData.json";
 import sourceData from "./data/sourceData.json";
 
-const [data,setData] = React.useState([]);
-const [loading,setLoading] =React.useState(true);
-const [error,setError] =React.useState(null);
 
-useEffect(() =>{
-    const fetchData =async () => {
-        try{
-            const response = await axios.get("http://localhost:5000/api/transactions");
-            setData(response.data);
-        }catch(err){
-            setError(err);
-        } finally {
-            setLoading(false);
-        }
-    };
-    fetchData();
-},[] )
 defaults.maintainAspectRatio = false;
 defaults.responsive = true;
 
@@ -34,6 +18,25 @@ defaults.plugins.title.font.size = 20;
 defaults.plugins.title.color = "black";
 
 export const App = () => {
+    const [data,setData] = React.useState([]);
+    const [loading,setLoading] =React.useState(true);
+    const [error,setError] =React.useState(null);
+
+    useEffect(() =>{
+        const fetchData =async () => {
+            try{
+                const response = await axios.get("http://localhost:5000/api/users");
+                setData(response.data);
+
+            }catch(err){
+                setError(err);
+            } finally {
+                setLoading(false);
+                console.log(data);
+            }
+        };
+        fetchData();
+    },[] )
     return (
         <div className="App">
             <div className="dataCard revenueCard">
