@@ -4,10 +4,12 @@ from flask_restful import Resource, Api, reqparse, fields , marshal_with, abort
 import os
 from parser_xml import parse, categorize_sms
 import logging
+from flask_cors import CORS
 
 
 
 app = Flask(__name__)
+CORS(app,origins="*")
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 db = SQLAlchemy(app)
 api = Api(app)

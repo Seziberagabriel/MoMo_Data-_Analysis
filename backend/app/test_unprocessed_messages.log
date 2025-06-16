@@ -14030,3 +14030,60 @@
 2025-06-17 01:12:38,471 -  * Restarting with stat
 2025-06-17 01:12:38,657 -  * Debugger is active!
 2025-06-17 01:12:38,661 -  * Debugger PIN: 141-365-229
+2025-06-17 01:22:35,718 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-17 01:22:35,719 - [33mPress CTRL+C to quit[0m
+2025-06-17 01:22:35,719 -  * Restarting with stat
+2025-06-17 01:22:35,902 -  * Debugger is active!
+2025-06-17 01:22:35,911 -  * Debugger PIN: 141-365-229
+2025-06-17 01:26:18,147 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-17 01:26:18,148 - [33mPress CTRL+C to quit[0m
+2025-06-17 01:26:18,148 -  * Restarting with stat
+2025-06-17 01:26:18,341 -  * Debugger is active!
+2025-06-17 01:26:18,348 -  * Debugger PIN: 141-365-229
+2025-06-17 01:27:47,187 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-17 01:27:47,225 -  * Restarting with stat
+2025-06-17 01:27:47,524 -  * Debugger is active!
+2025-06-17 01:27:47,530 -  * Debugger PIN: 141-365-229
+2025-06-17 01:27:59,567 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-17 01:27:59,568 - [33mPress CTRL+C to quit[0m
+2025-06-17 01:27:59,569 -  * Restarting with stat
+2025-06-17 01:27:59,773 -  * Debugger is active!
+2025-06-17 01:27:59,778 -  * Debugger PIN: 141-365-229
+2025-06-17 01:28:57,052 - 127.0.0.1 - - [17/Jun/2025 01:28:57] "[33mGET /api HTTP/1.1[0m" 404 -
+2025-06-17 01:29:02,890 - 127.0.0.1 - - [17/Jun/2025 01:29:02] "GET / HTTP/1.1" 200 -
+2025-06-17 01:29:30,593 - 127.0.0.1 - - [17/Jun/2025 01:29:30] "GET / HTTP/1.1" 200 -
+2025-06-17 01:29:36,219 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-17 01:29:36,223 - [33mPress CTRL+C to quit[0m
+2025-06-17 01:29:36,223 -  * Restarting with stat
+2025-06-17 01:29:36,418 -  * Debugger is active!
+2025-06-17 01:29:36,423 -  * Debugger PIN: 141-365-229
+2025-06-17 01:29:44,882 - 127.0.0.1 - - [17/Jun/2025 01:29:44] "GET / HTTP/1.1" 200 -
+2025-06-17 01:29:44,885 - 127.0.0.1 - - [17/Jun/2025 01:29:44] "GET / HTTP/1.1" 200 -
+2025-06-17 01:30:26,249 - 127.0.0.1 - - [17/Jun/2025 01:30:26] "[32mGET /api/users HTTP/1.1[0m" 308 -
+2025-06-17 01:30:26,285 - 127.0.0.1 - - [17/Jun/2025 01:30:26] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:30:26,287 - 127.0.0.1 - - [17/Jun/2025 01:30:26] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:32:33,043 - 127.0.0.1 - - [17/Jun/2025 01:32:33] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:32:33,047 - 127.0.0.1 - - [17/Jun/2025 01:32:33] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:32:35,406 - 127.0.0.1 - - [17/Jun/2025 01:32:35] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:32:35,408 - 127.0.0.1 - - [17/Jun/2025 01:32:35] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:32:55,981 - 127.0.0.1 - - [17/Jun/2025 01:32:55] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:32:55,986 - 127.0.0.1 - - [17/Jun/2025 01:32:55] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:32:57,914 - 127.0.0.1 - - [17/Jun/2025 01:32:57] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:32:57,917 - 127.0.0.1 - - [17/Jun/2025 01:32:57] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:33:18,972 - 127.0.0.1 - - [17/Jun/2025 01:33:18] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:33:18,975 - 127.0.0.1 - - [17/Jun/2025 01:33:18] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:33:20,947 - 127.0.0.1 - - [17/Jun/2025 01:33:20] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:33:20,949 - 127.0.0.1 - - [17/Jun/2025 01:33:20] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:35:07,018 - 127.0.0.1 - - [17/Jun/2025 01:35:07] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:35:07,020 - 127.0.0.1 - - [17/Jun/2025 01:35:07] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:36:35,948 - 127.0.0.1 - - [17/Jun/2025 01:36:35] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:36:35,951 - 127.0.0.1 - - [17/Jun/2025 01:36:35] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:36:40,435 - 127.0.0.1 - - [17/Jun/2025 01:36:40] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:36:40,439 - 127.0.0.1 - - [17/Jun/2025 01:36:40] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-17 01:37:55,612 - 127.0.0.1 - - [17/Jun/2025 01:37:55] "[32mGET /api/transactions HTTP/1.1[0m" 308 -
+2025-06-17 01:37:55,941 - 127.0.0.1 - - [17/Jun/2025 01:37:55] "GET /api/transactions/ HTTP/1.1" 200 -
+2025-06-17 01:37:56,196 - 127.0.0.1 - - [17/Jun/2025 01:37:56] "GET /api/transactions/ HTTP/1.1" 200 -
