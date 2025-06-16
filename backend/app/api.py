@@ -4,8 +4,6 @@ from flask_restful import Resource, Api, reqparse, fields , marshal_with, abort
 import os
 from parser_xml import parse, categorize_sms
 import logging
-# from models import sms_transactions , UserModel
-
 
 
 
@@ -34,6 +32,42 @@ class sms_transactions(db.Model):
         return f"Transaction(type = {self.type}, Amount = {self.amount}, Date = {self.date}, Details = {self.details} )"
 
 
+user_args = reqparse.RequestParser()
+user_args.add_argument('user_name', type=str, required=True,help="Name cannot be blank")
+user_args.add_argument('email', type=str, required=True,help="Email cannot be blank")
+
+userFields = {
+    'id': fields.Integer,
+    'user_name': fields.String,
+    'email': fields.String,
+}
+
+class Users(Resource):
+    def get(self):
+        users = UserModel.query.all()
+        return users
+api.add_resource(Users, '/api/users/')
+
+
+sms_transactions_args = reqparse.RequestParser()
+sms_transactions_args.add_argument('type', type=str, required=True,help="Transaction type cannot be blank")
+sms_transactions_args.add_argument('amount', type=int, required=True,help="Transaction amount cannot be blank")
+sms_transactions_args.add_argument('date', type=str, required=True,help="Transaction Date cannot be blank")
+sms_transactions_args.add_argument('details', type=str, required=True,help="Transaction Details cannot be blank")
+
+sms_transactionsFields = {
+    'id': fields.Integer,
+    'type': fields.String,
+    'amount': fields.Integer,
+    'date': fields.String,
+    'details': fields.String,
+}
+
+class Sms_Transactions(Resource):
+    def get(self):
+        transactions = sms_transactions.query.all()
+        return transactions
+api.add_resource(Sms_Transactions, '/api/transactions/')
 
 @app.route("/")
 def home():

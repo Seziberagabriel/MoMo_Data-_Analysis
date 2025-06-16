@@ -13787,3 +13787,37 @@
 2025-06-16 18:24:36,715 -  * Restarting with stat
 2025-06-16 18:24:36,893 -  * Debugger is active!
 2025-06-16 18:24:36,898 -  * Debugger PIN: 141-365-229
+2025-06-16 18:32:57,625 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-16 18:32:57,626 - [33mPress CTRL+C to quit[0m
+2025-06-16 18:32:57,626 -  * Restarting with stat
+2025-06-16 18:32:57,804 -  * Debugger is active!
+2025-06-16 18:32:57,810 -  * Debugger PIN: 141-365-229
+2025-06-16 18:34:00,412 - 127.0.0.1 - - [16/Jun/2025 18:34:00] "[33mPOST /api HTTP/1.1[0m" 404 -
+2025-06-16 18:34:06,570 - 127.0.0.1 - - [16/Jun/2025 18:34:06] "[33mGET /api HTTP/1.1[0m" 404 -
+2025-06-16 18:34:09,637 - 127.0.0.1 - - [16/Jun/2025 18:34:09] "[32mGET /api/users HTTP/1.1[0m" 308 -
+2025-06-16 18:34:09,656 - 127.0.0.1 - - [16/Jun/2025 18:34:09] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-16 18:38:54,876 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-16 18:38:54,927 -  * Restarting with stat
+2025-06-16 18:49:59,902 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-16 18:49:59,903 - [33mPress CTRL+C to quit[0m
+2025-06-16 18:49:59,903 -  * Restarting with stat
+2025-06-16 18:50:00,082 -  * Debugger is active!
+2025-06-16 18:50:00,089 -  * Debugger PIN: 141-365-229
+2025-06-16 18:50:05,396 - 127.0.0.1 - - [16/Jun/2025 18:50:05] "[32mGET /api/users HTTP/1.1[0m" 308 -
+2025-06-16 18:50:05,412 - 127.0.0.1 - - [16/Jun/2025 18:50:05] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-16 18:50:11,483 - 127.0.0.1 - - [16/Jun/2025 18:50:11] "[32mGET /api/transactions HTTP/1.1[0m" 308 -
+2025-06-16 18:50:11,519 - 127.0.0.1 - - [16/Jun/2025 18:50:11] "[35m[1mGET /api/transactions/ HTTP/1.1[0m" 500 -
+2025-06-16 18:51:48,751 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-16 18:51:48,803 -  * Restarting with stat
+2025-06-16 18:51:49,097 -  * Debugger is active!
+2025-06-16 18:51:49,105 -  * Debugger PIN: 141-365-229
+2025-06-16 18:52:27,935 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-16 18:52:27,976 -  * Restarting with stat
+2025-06-16 18:52:28,263 -  * Debugger is active!
+2025-06-16 18:52:28,270 -  * Debugger PIN: 141-365-229
+2025-06-16 18:54:28,223 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-16 18:54:28,257 -  * Restarting with stat
+2025-06-16 18:54:28,597 -  * Debugger is active!
+2025-06-16 18:54:28,603 -  * Debugger PIN: 141-365-229
