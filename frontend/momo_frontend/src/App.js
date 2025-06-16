@@ -22,17 +22,18 @@ export const App = () => {
     const [loading,setLoading] =React.useState(true);
     const [error,setError] =React.useState(null);
 
-    useEffect(() =>{
-        const fetchData =async () => {
-            try{
-                const response = await axios.get("http://localhost:5000/api/users");
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get("http://127.0.0.1:5000/api/transactions");
                 setData(response.data);
+
 
             }catch(err){
                 setError(err);
             } finally {
                 setLoading(false);
-                console.log(data);
+
             }
         };
         fetchData();
@@ -40,6 +41,14 @@ export const App = () => {
     return (
         <div className="App">
             <div className="dataCard revenueCard">
+                <div>
+                    {data.map((item) => (
+                        <div key={item.id}>
+                            <p>Transaction Type: {item.type}</p>
+                            <p>Details : ${item.details}</p>
+                        </div>
+                    ))}
+                </div>
                 <Line
                     data={{
                         labels: revenueData.map((data) => data.label),
