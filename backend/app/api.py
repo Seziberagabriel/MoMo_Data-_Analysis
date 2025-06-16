@@ -18,7 +18,7 @@ class UserModel(db.Model):
     email = db.Column(db.String(80),unique=True,nullable=False)
 
     def __repr__(self):
-        return f"User(name = {self.user_name}, email = {self.email})"
+        return f"User(user_name = {self.user_name}, email = {self.email})"
 
 
 class sms_transactions(db.Model):
@@ -51,10 +51,10 @@ class Users(Resource):
     def post(self):
         args = user_args.parse_args()
         user = UserModel(user_name = args["user_name"],email = args["email"])
-        db.sesson.agg(user)
+        db.session.add(user)
         db.session.commit()
         users = UserModel.query.all()
-        return users
+        return users,201
 
 api.add_resource(Users, '/api/users/')
 
@@ -78,6 +78,14 @@ class Sms_Transactions(Resource):
     def get(self):
         transactions = sms_transactions.query.all()
         return transactions
+    @marshal_with(sms_transactionsFields)
+    def post(self):
+        args = sms_transactions_args.parse_args()
+        transaction = sms_transactions(type = args["type"],amount = args["amount"], date = args["date"], details = args["details"])
+        db.session.add(transaction)
+        db.session.commit()
+        transactions = sms_transactions.query.all()
+        return transactions,201
 api.add_resource(Sms_Transactions, '/api/transactions/')
 
 @app.route("/")

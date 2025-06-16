@@ -13829,3 +13829,156 @@
 2025-06-16 18:57:15,834 -  * Debugger PIN: 141-365-229
 2025-06-16 18:57:18,756 - 127.0.0.1 - - [16/Jun/2025 18:57:18] "[32mGET /api/transactions HTTP/1.1[0m" 308 -
 2025-06-16 18:57:18,824 - 127.0.0.1 - - [16/Jun/2025 18:57:18] "GET /api/transactions/ HTTP/1.1" 200 -
+2025-06-16 22:40:21,058 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-16 22:40:21,059 - [33mPress CTRL+C to quit[0m
+2025-06-16 22:40:21,059 -  * Restarting with stat
+2025-06-16 22:40:21,238 -  * Debugger is active!
+2025-06-16 22:40:21,246 -  * Debugger PIN: 141-365-229
+2025-06-16 22:41:02,746 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-16 22:41:02,792 -  * Restarting with stat
+2025-06-16 22:41:03,066 -  * Debugger is active!
+2025-06-16 22:41:03,071 -  * Debugger PIN: 141-365-229
+2025-06-16 22:41:35,575 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-16 22:41:35,612 -  * Restarting with stat
+2025-06-16 22:41:35,902 -  * Debugger is active!
+2025-06-16 22:41:35,907 -  * Debugger PIN: 141-365-229
+2025-06-16 22:44:27,831 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-16 22:44:27,868 -  * Restarting with stat
+2025-06-16 22:44:28,145 -  * Debugger is active!
+2025-06-16 22:44:28,150 -  * Debugger PIN: 141-365-229
+2025-06-16 22:44:39,053 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-16 22:44:39,054 - [33mPress CTRL+C to quit[0m
+2025-06-16 22:44:39,054 -  * Restarting with stat
+2025-06-16 22:44:39,230 -  * Debugger is active!
+2025-06-16 22:44:39,234 -  * Debugger PIN: 141-365-229
+2025-06-16 22:45:24,571 - 127.0.0.1 - - [16/Jun/2025 22:45:24] "[32mGET /api/users HTTP/1.1[0m" 308 -
+2025-06-16 22:45:24,587 - 127.0.0.1 - - [16/Jun/2025 22:45:24] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-16 22:47:20,693 - 127.0.0.1 - - [16/Jun/2025 22:47:20] "[32mPOST /api/users HTTP/1.1[0m" 308 -
+2025-06-16 22:47:20,711 - 127.0.0.1 - - [16/Jun/2025 22:47:20] "[35m[1mPOST /api/users/ HTTP/1.1[0m" 500 -
+2025-06-16 22:48:52,515 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-16 22:48:52,567 -  * Restarting with stat
+2025-06-16 22:48:52,896 -  * Debugger is active!
+2025-06-16 22:48:52,902 -  * Debugger PIN: 141-365-229
+2025-06-16 22:48:56,172 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-16 22:48:56,172 - [33mPress CTRL+C to quit[0m
+2025-06-16 22:48:56,173 -  * Restarting with stat
+2025-06-16 22:48:56,350 -  * Debugger is active!
+2025-06-16 22:48:56,354 -  * Debugger PIN: 141-365-229
+2025-06-16 22:49:00,761 - 127.0.0.1 - - [16/Jun/2025 22:49:00] "[32mPOST /api/users HTTP/1.1[0m" 308 -
+2025-06-16 22:49:00,779 - 127.0.0.1 - - [16/Jun/2025 22:49:00] "[35m[1mPOST /api/users/ HTTP/1.1[0m" 500 -
+2025-06-16 22:50:06,894 - 127.0.0.1 - - [16/Jun/2025 22:50:06] "[32mPOST /api/users HTTP/1.1[0m" 308 -
+2025-06-16 22:50:06,896 - 127.0.0.1 - - [16/Jun/2025 22:50:06] "[31m[1mPOST /api/users/ HTTP/1.1[0m" 400 -
+2025-06-16 22:50:18,524 - 127.0.0.1 - - [16/Jun/2025 22:50:18] "[32mPOST /api/users HTTP/1.1[0m" 308 -
+2025-06-16 22:50:18,536 - 127.0.0.1 - - [16/Jun/2025 22:50:18] "[35m[1mPOST /api/users/ HTTP/1.1[0m" 500 -
+2025-06-16 22:53:30,779 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-16 22:53:30,817 -  * Restarting with stat
+2025-06-16 22:53:31,100 -  * Debugger is active!
+2025-06-16 22:53:31,105 -  * Debugger PIN: 141-365-229
+2025-06-16 22:53:33,728 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-16 22:53:33,728 - [33mPress CTRL+C to quit[0m
+2025-06-16 22:53:33,728 -  * Restarting with stat
+2025-06-16 22:53:33,905 -  * Debugger is active!
+2025-06-16 22:53:33,909 -  * Debugger PIN: 141-365-229
+2025-06-16 22:53:37,709 - 127.0.0.1 - - [16/Jun/2025 22:53:37] "[32mPOST /api/users HTTP/1.1[0m" 308 -
+2025-06-16 22:53:37,723 - 127.0.0.1 - - [16/Jun/2025 22:53:37] "[35m[1mPOST /api/users/ HTTP/1.1[0m" 500 -
+2025-06-16 22:53:42,672 - 127.0.0.1 - - [16/Jun/2025 22:53:42] "[32mPOST /api/users HTTP/1.1[0m" 308 -
+2025-06-16 22:53:42,674 - 127.0.0.1 - - [16/Jun/2025 22:53:42] "[31m[1mPOST /api/users/ HTTP/1.1[0m" 400 -
+2025-06-16 22:53:51,539 - 127.0.0.1 - - [16/Jun/2025 22:53:51] "[32mPOST /api/users HTTP/1.1[0m" 308 -
+2025-06-16 22:53:51,554 - 127.0.0.1 - - [16/Jun/2025 22:53:51] "[35m[1mPOST /api/users/ HTTP/1.1[0m" 500 -
+2025-06-16 22:54:00,097 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-16 22:54:00,133 -  * Restarting with stat
+2025-06-16 22:54:00,408 -  * Debugger is active!
+2025-06-16 22:54:00,414 -  * Debugger PIN: 141-365-229
+2025-06-16 22:54:58,470 - 127.0.0.1 - - [16/Jun/2025 22:54:58] "[33mGET /api/transaction HTTP/1.1[0m" 404 -
+2025-06-16 22:55:06,729 - 127.0.0.1 - - [16/Jun/2025 22:55:06] "[33mGET /api/transaction HTTP/1.1[0m" 404 -
+2025-06-16 22:55:17,161 - 127.0.0.1 - - [16/Jun/2025 22:55:17] "[33mGET /api/transaction HTTP/1.1[0m" 404 -
+2025-06-16 22:55:22,606 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-16 22:55:22,606 - [33mPress CTRL+C to quit[0m
+2025-06-16 22:55:22,607 -  * Restarting with stat
+2025-06-16 22:55:22,781 -  * Debugger is active!
+2025-06-16 22:55:22,787 -  * Debugger PIN: 141-365-229
+2025-06-16 22:56:40,468 - 127.0.0.1 - - [16/Jun/2025 22:56:40] "[32mGET /api/users HTTP/1.1[0m" 308 -
+2025-06-16 22:56:40,486 - 127.0.0.1 - - [16/Jun/2025 22:56:40] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-16 22:56:46,959 - 127.0.0.1 - - [16/Jun/2025 22:56:46] "[32mGET /api/users HTTP/1.1[0m" 308 -
+2025-06-16 22:56:46,962 - 127.0.0.1 - - [16/Jun/2025 22:56:46] "GET /api/users/ HTTP/1.1" 200 -
+2025-06-16 22:56:51,633 - 127.0.0.1 - - [16/Jun/2025 22:56:51] "[32mPOST /api/users HTTP/1.1[0m" 308 -
+2025-06-16 22:56:51,651 - 127.0.0.1 - - [16/Jun/2025 22:56:51] "[35m[1mPOST /api/users/ HTTP/1.1[0m" 500 -
+2025-06-16 22:58:17,157 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-16 22:58:17,200 -  * Restarting with stat
+2025-06-16 22:58:17,484 -  * Debugger is active!
+2025-06-16 22:58:17,490 -  * Debugger PIN: 141-365-229
+2025-06-16 22:58:20,942 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-16 22:58:20,942 - [33mPress CTRL+C to quit[0m
+2025-06-16 22:58:20,943 -  * Restarting with stat
+2025-06-16 22:58:21,122 -  * Debugger is active!
+2025-06-16 22:58:21,126 -  * Debugger PIN: 141-365-229
+2025-06-16 22:58:39,371 - 127.0.0.1 - - [16/Jun/2025 22:58:39] "[32mGET /api/transactions HTTP/1.1[0m" 308 -
+2025-06-16 22:58:39,435 - 127.0.0.1 - - [16/Jun/2025 22:58:39] "GET /api/transactions/ HTTP/1.1" 200 -
+2025-06-16 23:00:20,166 - 127.0.0.1 - - [16/Jun/2025 23:00:20] "[32mPOST /api/transactions HTTP/1.1[0m" 308 -
+2025-06-16 23:00:20,181 - 127.0.0.1 - - [16/Jun/2025 23:00:20] "[35m[1mPOST /api/transactions/ HTTP/1.1[0m" 500 -
+2025-06-16 23:01:21,088 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-16 23:01:21,130 -  * Restarting with stat
+2025-06-16 23:01:21,409 -  * Debugger is active!
+2025-06-16 23:01:21,414 -  * Debugger PIN: 141-365-229
+2025-06-16 23:01:22,939 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-16 23:01:22,939 - [33mPress CTRL+C to quit[0m
+2025-06-16 23:01:22,940 -  * Restarting with stat
+2025-06-16 23:01:23,116 -  * Debugger is active!
+2025-06-16 23:01:23,121 -  * Debugger PIN: 141-365-229
+2025-06-16 23:01:28,137 - 127.0.0.1 - - [16/Jun/2025 23:01:28] "[32mPOST /api/transactions HTTP/1.1[0m" 308 -
+2025-06-16 23:01:28,154 - 127.0.0.1 - - [16/Jun/2025 23:01:28] "[35m[1mPOST /api/transactions/ HTTP/1.1[0m" 500 -
+2025-06-16 23:04:34,035 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-16 23:04:34,074 -  * Restarting with stat
+2025-06-16 23:04:34,355 -  * Debugger is active!
+2025-06-16 23:04:34,361 -  * Debugger PIN: 141-365-229
+2025-06-16 23:04:36,573 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-16 23:04:36,573 - [33mPress CTRL+C to quit[0m
+2025-06-16 23:04:36,573 -  * Restarting with stat
+2025-06-16 23:04:36,749 -  * Debugger is active!
+2025-06-16 23:04:36,753 -  * Debugger PIN: 141-365-229
+2025-06-16 23:04:49,349 - 127.0.0.1 - - [16/Jun/2025 23:04:49] "[32mPOST /api/users HTTP/1.1[0m" 308 -
+2025-06-16 23:04:49,369 - 127.0.0.1 - - [16/Jun/2025 23:04:49] "[35m[1mPOST /api/users/ HTTP/1.1[0m" 500 -
+2025-06-16 23:05:04,942 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-16 23:05:04,989 -  * Restarting with stat
+2025-06-16 23:05:05,287 -  * Debugger is active!
+2025-06-16 23:05:05,292 -  * Debugger PIN: 141-365-229
+2025-06-16 23:05:09,132 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-16 23:05:09,132 - [33mPress CTRL+C to quit[0m
+2025-06-16 23:05:09,132 -  * Restarting with stat
+2025-06-16 23:05:09,311 -  * Debugger is active!
+2025-06-16 23:05:09,315 -  * Debugger PIN: 141-365-229
+2025-06-16 23:05:11,908 - 127.0.0.1 - - [16/Jun/2025 23:05:11] "[32mPOST /api/users HTTP/1.1[0m" 308 -
+2025-06-16 23:05:11,925 - 127.0.0.1 - - [16/Jun/2025 23:05:11] "[35m[1mPOST /api/users/ HTTP/1.1[0m" 500 -
+2025-06-16 23:05:16,140 - 127.0.0.1 - - [16/Jun/2025 23:05:16] "[32mPOST /api/transactions HTTP/1.1[0m" 308 -
+2025-06-16 23:05:16,146 - 127.0.0.1 - - [16/Jun/2025 23:05:16] "[35m[1mPOST /api/transactions/ HTTP/1.1[0m" 500 -
+2025-06-16 23:08:46,935 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-16 23:08:46,935 - [33mPress CTRL+C to quit[0m
+2025-06-16 23:08:46,936 -  * Restarting with stat
+2025-06-16 23:08:47,132 -  * Debugger is active!
+2025-06-16 23:08:47,138 -  * Debugger PIN: 141-365-229
+2025-06-16 23:08:50,021 - 127.0.0.1 - - [16/Jun/2025 23:08:50] "[32mPOST /api/users HTTP/1.1[0m" 308 -
+2025-06-16 23:08:50,043 - 127.0.0.1 - - [16/Jun/2025 23:08:50] "[35m[1mPOST /api/users/ HTTP/1.1[0m" 500 -
+2025-06-16 23:09:24,184 -  * Detected change in '/Users/Paul_1/Documents/school/BSE/Momo/MoMo_Data-_Analysis/backend/app/api.py', reloading
+2025-06-16 23:09:24,227 -  * Restarting with stat
+2025-06-16 23:09:24,497 -  * Debugger is active!
+2025-06-16 23:09:24,502 -  * Debugger PIN: 141-365-229
+2025-06-16 23:09:27,236 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-16 23:09:27,236 - [33mPress CTRL+C to quit[0m
+2025-06-16 23:09:27,237 -  * Restarting with stat
+2025-06-16 23:09:27,416 -  * Debugger is active!
+2025-06-16 23:09:27,421 -  * Debugger PIN: 141-365-229
+2025-06-16 23:09:30,131 - 127.0.0.1 - - [16/Jun/2025 23:09:30] "[32mPOST /api/users HTTP/1.1[0m" 308 -
+2025-06-16 23:09:30,146 - 127.0.0.1 - - [16/Jun/2025 23:09:30] "[35m[1mPOST /api/users/ HTTP/1.1[0m" 201 -
+2025-06-16 23:09:38,652 - 127.0.0.1 - - [16/Jun/2025 23:09:38] "[32mPOST /api/transactions HTTP/1.1[0m" 308 -
+2025-06-16 23:09:38,719 - 127.0.0.1 - - [16/Jun/2025 23:09:38] "[35m[1mPOST /api/transactions/ HTTP/1.1[0m" 201 -
