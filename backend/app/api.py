@@ -43,6 +43,7 @@ userFields = {
 }
 
 class Users(Resource):
+    @marshal_with(userFields)
     def get(self):
         users = UserModel.query.all()
         return users
@@ -64,6 +65,7 @@ sms_transactionsFields = {
 }
 
 class Sms_Transactions(Resource):
+    @marshal_with(sms_transactionsFields)
     def get(self):
         transactions = sms_transactions.query.all()
         return transactions
