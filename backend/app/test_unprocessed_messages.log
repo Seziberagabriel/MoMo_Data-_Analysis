@@ -13775,3 +13775,15 @@
 2025-06-15 02:12:16,650 - Unprocessed or invalid message: Yello!Umaze kugura 3000Frw=2500Mins+100SMS igura 3,000 RWF
 2025-06-15 02:12:16,651 - Unprocessed or invalid message: Yello!Umaze kugura 3000Frw=2500Mins+100SMS igura 3,000 RWF
 2025-06-15 02:12:16,654 - 127.0.0.1 - - [15/Jun/2025 02:12:16] "POST /parse-xml HTTP/1.1" 200 -
+2025-06-16 18:21:24,306 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-16 18:21:24,306 - [33mPress CTRL+C to quit[0m
+2025-06-16 18:21:24,307 -  * Restarting with stat
+2025-06-16 18:21:24,484 -  * Debugger is active!
+2025-06-16 18:21:24,492 -  * Debugger PIN: 141-365-229
+2025-06-16 18:24:36,713 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-16 18:24:36,714 - [33mPress CTRL+C to quit[0m
+2025-06-16 18:24:36,715 -  * Restarting with stat
+2025-06-16 18:24:36,893 -  * Debugger is active!
+2025-06-16 18:24:36,898 -  * Debugger PIN: 141-365-229

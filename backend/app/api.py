@@ -4,7 +4,7 @@ from flask_restful import Resource, Api, reqparse, fields , marshal_with, abort
 import os
 from parser_xml import parse, categorize_sms
 import logging
-from models import sms_transactions , UserModel
+# from models import sms_transactions , UserModel
 
 
 
@@ -13,6 +13,25 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 db = SQLAlchemy(app)
 api = Api(app)
+
+class UserModel(db.Model):
+    id = db.Column(db.Integer,primary_key=True)
+    user_name = db.Column(db.String(80),unique=True,nullable=False)
+    email = db.Column(db.String(80),unique=True,nullable=False)
+
+    def __repr__(self):
+        return f"User(name = {self.user_name}, email = {self.email})"
+
+
+class sms_transactions(db.Model):
+    id = db.Column(db.Integer,primary_key=True)
+    type = db.Column(db.String(80))
+    amount = db.Column(db.Integer)
+    date = db.Column(db.String(80))
+    details = db.Column(db.String(80))
+
+    def __repr__(self):
+        return f"Transaction(type = {self.type}, Amount = {self.amount}, Date = {self.date}, Details = {self.details} )"
 
 
 

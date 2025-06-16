@@ -29,21 +29,21 @@ class usermodel(db.model):
  class Users (Resource):
          @marshal_with(userFields)
          def get(self):
-         users =UserModel.query.all()
+         users = UserModel.query.all()
          return users
                                                             
         @marshal_with(userFields)
-                 def post (self):
+        def post (self):
                 args =user_args.parse-args()
                 user =usermodel(name=args["name"], email=args["email"])
-                 db.session.add(user)
-                 db.session.commit()
+                db.session.add(user)
+                db.session.commit()
                 users =usermodel.query.all()
-                 return users, 201
+                return users, 201
                                                                                                                     
  class user(Resource): 
-      @marshal_with(userFields)
-         def get (self, id):
+        @marshal_with(userFields)
+        def get (self, id):
          user =usermodel.query.filter_by(id=id).first()
         if not user:
          abort (404, "user not found")
