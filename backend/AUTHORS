@@ -1,0 +1,30 @@
+
+---
+
+## 👥 `AUTHORS`
+
+```text
+Project Contributors
+
+👤 Paul Muwanguzi  
+- Role: Fullstack Developer & Lead Developer 
+- Email: p.muwanguzi@alustudent.com  
+
+👤 Carla Lisa Batoni  
+- Role: User Model Developer  
+- Designed and implemented the `user.py` (UserModel) module   
+- Email: c.batoni@alustudent.com  
+
+👤 Uche Ezette  
+- Role: XML Data Specialist & QA Tester  
+- Focused on XML schema formatting, message quality assurance, and SMS message structure handling. 
+- Email: u.ezette@alustudent.com  
+
+👤 Gabriel Tuyisingize Sezibera  
+- Role: Debugging & Testing  
+- Helped track and resolve SQLite locking issues, and supported unit testing of endpoint logic  
+- Email: g.tuyisingi@alustudent.com  
+
+🧠 Project Concept and Backend Design inspired by MTN MoMo Data & ALU assignment use case.
+
+✍️ Documentation written with the help of ChatGPT and community best practices.
