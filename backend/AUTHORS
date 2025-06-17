@@ -3,11 +3,12 @@
 
 ## 👥 `AUTHORS`
 
-```text
+
 Project Contributors
 
 👤 Paul Muwanguzi  
-- Role: Fullstack Developer & Lead Developer 
+- Role: Fullstack & Lead Developer 
+- Developed the Flask API, handled XML-to-database integration, built the frontend, and ensured the entire system ran smoothly.  
 - Email: p.muwanguzi@alustudent.com  
 
 👤 Carla Lisa Batoni  

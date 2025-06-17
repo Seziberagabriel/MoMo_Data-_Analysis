@@ -17,6 +17,21 @@ This project is a Flask-based backend service that parses MTN Mobile Money SMS m
 
 ## 📁 Project Structure
 
+- `app/`
+	+ `api.py`: RESTful API endpoints
+	+ `config.py`: database configuration
+	+ `models.py`: database models
+	+ `parser_xml.py`: XML parser utility
+	+ `transaction_model.py`: transaction model
+- `db/`: database files
+	+ `data.db`: SQLite database file
+- `exports/`: JSON export utility
+	+ `export_to_json.py`: JSON export script
+- `logs/`: error log files
+	+ `unprocessed_messages.log`: log of unprocessed messages
+- `requirements.txt`: Python package dependencies
+- `README.md`: this file
+
 
 ---
 
@@ -44,7 +59,7 @@ This project is a Flask-based backend service that parses MTN Mobile Money SMS m
 # pip install flask
 
 
-🛠️ Running the Backend Server
+# 🛠️ Running the Backend Server
 # From the backend/ folder
 # python api.py
 # By default, the server runs on http://127.0.0.1:5000.
