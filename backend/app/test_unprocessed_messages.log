@@ -14087,3 +14087,15 @@
 2025-06-17 01:37:55,612 - 127.0.0.1 - - [17/Jun/2025 01:37:55] "[32mGET /api/transactions HTTP/1.1[0m" 308 -
 2025-06-17 01:37:55,941 - 127.0.0.1 - - [17/Jun/2025 01:37:55] "GET /api/transactions/ HTTP/1.1" 200 -
 2025-06-17 01:37:56,196 - 127.0.0.1 - - [17/Jun/2025 01:37:56] "GET /api/transactions/ HTTP/1.1" 200 -
+2025-06-19 21:28:41,491 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-19 21:28:41,491 - [33mPress CTRL+C to quit[0m
+2025-06-19 21:28:41,492 -  * Restarting with stat
+2025-06-19 21:28:41,709 -  * Debugger is active!
+2025-06-19 21:28:41,719 -  * Debugger PIN: 141-365-229
+2025-06-19 21:30:20,200 - 127.0.0.1 - - [19/Jun/2025 21:30:20] "GET /api/transactions/ HTTP/1.1" 200 -
+2025-06-19 21:30:20,305 - 127.0.0.1 - - [19/Jun/2025 21:30:20] "GET /api/transactions/ HTTP/1.1" 200 -
+2025-06-19 21:34:06,209 - 127.0.0.1 - - [19/Jun/2025 21:34:06] "GET /api/transactions/ HTTP/1.1" 200 -
+2025-06-19 21:34:06,253 - 127.0.0.1 - - [19/Jun/2025 21:34:06] "GET /api/transactions/ HTTP/1.1" 200 -
+2025-06-19 21:38:00,730 - 127.0.0.1 - - [19/Jun/2025 21:38:00] "GET /api/transactions/ HTTP/1.1" 200 -
+2025-06-19 21:38:00,788 - 127.0.0.1 - - [19/Jun/2025 21:38:00] "GET /api/transactions/ HTTP/1.1" 200 -
