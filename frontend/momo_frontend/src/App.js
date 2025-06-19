@@ -40,12 +40,12 @@ export const App = () => {
     },[] )
     return (
         <div className="App">
-            <div className="dataCard revenueCard">
+            <div className=" revenueCard">
                 <div>
                     {data.map((item) => (
                         <div key={item.id}>
-                            <p>Transaction Type: {item.type}</p>
-                            <p>Details : ${item.details}</p>
+                            <>Transaction Type: {item.type}</>
+                            <>Details : ${item.details}</>
                         </div>
                     ))}
                 </div>
