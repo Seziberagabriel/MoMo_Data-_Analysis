@@ -4,7 +4,7 @@ This project demonstrates the development of a fullstack enterprise-grade applic
 
 ## 🚀 Project Overview
 
-You'll be working with an XML dataset containing ~1600 SMS messages representing different transaction types. The application will:
+We are working with an XML dataset containing ~1600 SMS messages representing different transaction types. The application will:
 
 - Extract and clean SMS data
 - Categorize and store the data in a relational database
