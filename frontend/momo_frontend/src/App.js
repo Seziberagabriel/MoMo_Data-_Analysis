@@ -40,17 +40,30 @@ export const App = () => {
     },[] )
     return (
         <div className="App">
-            <div className=" revenueCard">
-                <div>
-                    {data.map((item) => (
-                        <div key={item.id}>
-                            <>Transaction Type: {item.type}</>
-                            <>Details : ${item.details}</>
-                        </div>
-                    ))}
-                </div>
-            </div>
 
+
+            <table className="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Transaction Type</th>
+                    <th scope="col">Transaction Details</th>
+                    {/*<th scope="col">Handle</th>*/}
+                </tr>
+                </thead>
+                <tbody>
+                {data.map((item) => (
+                    // <div key={item.id}>
+                    //     <>Transaction
+                    <tr>
+                    <th scope="row">{item.id}</th>
+                    <td>{item.type}</td>
+                    <td>{item.details}</td>
+                    </tr>
+                ))}
+
+                </tbody>
+            </table>
         </div>
     );
 };
